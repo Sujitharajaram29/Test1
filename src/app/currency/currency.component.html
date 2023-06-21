@@ -1,0 +1,26 @@
+
+<!----------------------------------HEADING-------------------------->
+<p style="font-weight: 500; margin: 12px;">Check your Currency value Here!!</p>
+<!----------------------------------CONTAINER STARTS-------------------------->
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3">
+        <p style="font-weight: 500;">Base Currency</p>
+        <select [(ngModel)]="selectedCurrency" class="form-select" aria-label="Default select example" (change)="CallAPI()">
+            <option selected>select</option>
+            <option value="INR">INR</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+          </select>        
+      </div> 
+      
+    </div>
+
+  </div>
+
+<!----------------------------------BUTTON--------------------------> 
+  <button style="margin: 10px;" routerLink="/home" type="button" class="btn btn-dark">Back To Home</button>
+
+
+  <h5>Note:</h5><p>Every API is in Subscribtion basis. I couldnt get free API for checking past 15 days value.<br>
+     Instead I had used the one which shows the name of the selected currency.</p>

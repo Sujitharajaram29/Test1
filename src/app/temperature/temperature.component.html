@@ -1,0 +1,20 @@
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3">
+      <label class="label">Celsius: </label>
+    <input type="number"  class="large"  data-test-id="celsius-input"
+      [(ngModel)]="c" (ngModelChange)="onChange($event, 'c')"/>
+    </div>
+   
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <label class="label">Fahrenheit: </label>
+    <input type="number" class="large" data-test-id="fahrenheit-input"
+      [(ngModel)]="f" (ngModelChange)="onChange($event, 'f')"/>
+    </div>
+  </div>
+<!----------------------------------BUTTON-------------------------->
+  <button style="margin: 10px;" type="button" routerLink="/home" class="btn btn-dark">Back To Home</button>
+</div>
